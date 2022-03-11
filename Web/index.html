@@ -36,8 +36,8 @@
         </ul>
     </nav>
 
-    <div>
-        <img src="/img/Logo Epaos.png" alt="" style="width: 100%; height:auto;">
+    <div style="max-height: 30rem; height: auto; overflow: hidden;display: flex;justify-content: center;align-items: center;">
+        <img src="/img/imagenes nuevas/bigBackgroundImg.jpg" alt="" style="width: 100%; height:auto;">
     </div>
 
     <!-- Empresa (Epaos Vison Mision)-->
@@ -88,21 +88,24 @@
 
     <!-- Servicios-->
 
-    <div style="display: flex; justify-content: center;align-items: center; height: 10vh;background-color: rgb(255, 62, 62);">
-        <h1>¿En que podemos ayudarte?</h1>
+    <div class="section-banner">
+        <h2>¿En que podemos ayudarte?</h2>
     </div>
 
     <div style="display: flex; flex-direction: column; justify-content: center;">
-        <div style="align-self: center; width: 90%; margin-top: 1vh; display: flex; justify-content: center;align-items: center; height: 8vh;border:1px groove gray; background-color: rgba(0, 255, 221, 0.385);">
+        <div class="section-banner2">
             <h2>Servicios</h2>
         </div>
     </div>
 
-    <div>
+    <div style="justify-content: center;display: flex;">
         <div class="news-cards">        
             <div class="epaos">
-                <img src="/img/Logo Epaos.png" alt="">
-                <h3>Trabajo de campo</h3>
+                <div class="top">
+                    <h3 style="margin: 1vh;">Trabajo de campo</h3>
+                    <hr>
+                    <img src="/img/imagenes nuevas/trabajodecampo1.jpg" alt="imagen referente">
+                </div>
                 <ul>
                     <li>Levantamiento de Información con equipos GNSS: Redes Geodésicas, Puntos Certificados, Líneas Bases, Redes de Nivelación Geométrica, Puntos de control para fotogrametría y Lidar, según normas oficiales a nivel local, nivel regional o a nivel de país.</li>
                     <li>Levantamiento de Información GNSS con métodos Estáticos, PPK, RTK, NTRIP, PPP.</li>
@@ -113,8 +116,11 @@
             </div>
 
             <div class="epaos">
-                <img src="/img/Logo Epaos.png" alt="">
-                <h3 style="margin-bottom: 1vh;">Trabajo de gabinete</h3>
+                <div class="top">
+                    <h3 style="margin: 1vh;">Trabajo de gabinete</h3>
+                    <hr>
+                    <img src="img/imagenes nuevas/trabajodegabinete1.JPG" alt="imagen referente">
+                </div>
                 <ul>
                     <li>Cálculo de Calibración Local con 7P.</li>
                     <li>Cálculo de Nivelación Geométrica, ajustes y compensaciones en proyectos ejecutados. </li>
@@ -127,6 +133,7 @@
                     <li>Calculo para transformar del Elipsoide WGS84 a Elipsoide Local con la ecuación de Helmert (07 parámetros).  </li>
                     <li>Calculo para transformar del Elipsoide WGS84 a Elipsoide Local con la ecuación de Regresión Múltiple (13 parámetros). </li>
                 </ul>
+            
             </div>
 
         </div>
@@ -134,63 +141,71 @@
 
     <!-- Epaos Educativo -->
 
-    <div style="justify-content: center;display: flex; flex-direction: column;">
-        <div style="align-self: center; width: 90%; margin-top: 1vh; display: flex; justify-content: center;align-items: center; height: 8vh;border:1px groove gray; background-color: rgba(255, 247, 0, 0.363);">
-            <h2>Epaos Educativo</h2>
-        </div>
+    <div class="educativo-container">
+        <div style="justify-content: center;display: flex; flex-direction: column;">
+            <div class ="section-banner" style="background-color: rgb(152, 255, 167);">
+                <h2>Epaos Educativo</h2>
+            </div>
 
-        <div style="margin-top: 3vh; margin-bottom: 1vh; display: flex; flex-direction: column; justify-content: center; margin: 2vh;">
-            <p>Somos un equipo de especialistas en dirección y ejecución de proyectos interesados en aportar a través de la educación personalizada y corporativa sobre temas relacionados a la topografía, geodesia y cartografía. Tenemos experiencia en la docencia universitaria, capacitación profesional y empresarial.
-                En estos tiempos de confinamientos decidimos reinventarnos e ingresar al mundo de la educación a distancia.
-                </p>
+            <div style="display: flex; flex-direction: column; justify-content: center; margin: 2vh auto;width: 60%;text-align: justify; background-color: rgba(255, 255, 255, 0.537);">
+                <p>Somos un equipo de especialistas en dirección y ejecución de proyectos interesados en aportar a través de la educación personalizada y corporativa sobre temas relacionados a la topografía, geodesia y cartografía. Tenemos experiencia en la docencia universitaria, capacitación profesional y empresarial.
+                    En estos tiempos de confinamientos decidimos reinventarnos e ingresar al mundo de la educación a distancia.
+                    </p>
 
-            <ul style="margin: 1vh;display: flex; flex-direction: column; gap: 1vh;">
-                <div>
-                    <li>
-                        Capacitación: Capacitamos a tu personal in situ para dar solución a tus dificultades cartográficas.
-                    </li>
-                    <img src="" alt="imagen referente">
-                </div>
-                
-                <div>
-                    <li>
-                        Cursos: Brindamos cursos basados en nuestra experiencia de dirección y ejecución de proyectos nacionales e internacionales.
-                    </li>
-                    <img src="" alt="imagen referente">
-                </div>
+                <ul style="margin: 1vh;display: flex; flex-direction: column; gap: 1vh;">
+                    <div>
+                        <li>
+                            Capacitación: Capacitamos a tu personal in situ para dar solución a tus dificultades cartográficas.
+                        </li>
+                        <div class="educativo-img">
+                            <img src="img/imagenes nuevas/EpaosEducativoCapacitacion.jpg" alt="imagen referente">
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <li>
+                            Cursos: Brindamos cursos basados en nuestra experiencia de dirección y ejecución de proyectos nacionales e internacionales.
+                        </li>
+                        <div class="educativo-img">
+                            <img src="img/imagenes nuevas/EpaosEducativoCursos1.jpg" alt="imagen referente">
+                        </div>
+                    </div>
 
-                <div>
-                    <li>
-                        Webinar: compartimos la experiencia de nuestros especialistas continuamente a través de nuestras redes sociales.
-                    </li>
-                    <img src="" alt="imagen referente">
-                </div>
-            </ul>
+                    <div>
+                        <li>
+                            Webinar: compartimos la experiencia de nuestros especialistas continuamente a través de nuestras redes sociales.
+                        </li>
+                        <div class="educativo-img">
+                            <img src="img/imagenes nuevas/EpaosEducativoWebinar1.jpg" alt="imagen referente">
+                        </div>
+                    </div>
+                </ul>
+            </div>
         </div>
     </div>
 
     <!-- Otros Servicios -->
 
     <div style="display: flex; flex-direction: column; justify-content: center;">
-        <div style="align-self: center; width: 90%; margin-top: 1vh; display: flex; justify-content: center;align-items: center; height: 8vh;border:1px groove gray; background-color: rgba(0, 255, 221, 0.385);">
+        <div class="section-banner2">
             <h2>Otros Servicios</h2>
         </div>
     </div>
 
-    <div>
+    <div style="display: flex; justify-content: center;">
         <div class="news-cards">        
             <div class="epaos">
-                <img src="/img/Logo Epaos.png" alt="">
+                <div class="top">
+                    <h3 style="margin: 1vh;">Consultoría y Asesoría</h3>
+                    <hr>
+                    <img src="img/imagenes nuevas/EpaosConsultoriaYAsesoria1.jpg" alt="imagen referente">
+                </div>
 
-                <h3 style="margin-bottom: 1vh; display: flex; justify-content: center;">Consultoría y Asesoría</h3>
-
-                <img src="" alt="imagen referente">
                 <p style="margin: 1vh;">
                     En EPAOS SAC atendemos a empresas dando soluciones eficientes aplicando la Ingeniería y la tecnología como una herramienta para dar soluciones finales, contamos con profesionales con más 20 años en el campo de la investigación, estamos siempre dispuestos a brindar consultoría y asesoría personalizada en:
                 </p>
 
                 <div>
-                    <img src="" alt="imagen referente" style="margin-top: 2vh;">
                     <ul>
                         <li>Proyectos cartográficos donde la Geodesia y Topografía, son herramientas fundamentales para la calidad de los resultados.</li>
                         <li>Generación de Parámetros de Transformación entre el Sistemas WGS84 a su sistema Local para proyectos cartográficos con distorsiones en la precisión.</li>
@@ -201,11 +216,12 @@
             </div>
 
             <div class="epaos">
-                <img src="/img/Logo Epaos.png" alt="">
+                <div class="top">
+                    <h3 style="margin: 1vh;">Transporte</h3>
+                    <hr>
+                    <img src="img/imagenes nuevas/EpaosServiciosTrasporte1.jpg" alt="imagen referente" >
+                </div>
 
-                <h3 style="margin-bottom: 1vh; display: flex; justify-content: center;">Transporte</h3>
-
-                <img src="" alt="imagen referente" >
                 <p style="margin: 1vh;">
                     Nuestra Empresa cuenta con una Amplia y Moderna Flota de Buses, Minibuses y Vans para cubrir el servicio de traslado de personal de su empresa, tenemos amplia experiencia en atender estos servicios especializados.
                 </p>
@@ -215,6 +231,55 @@
             </div>
         </div>
     </div>
+
+    <!-- Proyectos Portafolio-->
+    <div>
+        <div style="display: flex; flex-direction: column; justify-content: center;">
+            <div class="section-banner2">
+                <h2>Proyectos - Portafolio</h2>
+            </div>
+        </div>
+
+        <div class="flex-column-center">
+            <div style="display: flex; flex-direction: column; gap: 2vh;">
+                <p>
+                    Nuestro personal ha participado en proyectos Nacionales e Internacionales cuya experiencia certifica la calidad de nuestros trabajos, a continuación, detallamos los proyectos que han participado nuestro personal, tanto en la dirección como procesos de cálculo:
+                </p>
+    
+                <div>
+                    <h3>
+                        Proyectos
+                    </h3>
+    
+                    <ul>
+                        <li>
+                            Proyecto MEM. INACC - Catastro Minero Nacional
+                        </li>
+    
+                        <li>
+                            Proyecto MEM. INACC - Determinación de Parámetros de Transformación del Sistema WGS84 a PSAD56 para Catastro Minero.
+                        </li>
+    
+                        <li>
+                            Proyecto MEM. INACC - Inicio en la determinación del Modelo Ondulatorio Local Basado en la ecuación de la Serie de Taylor.
+                        </li>
+    
+                        <li>
+                            Proyecto Toromocho - Minera Peru Copper. Determinar la calibración local aplicando el Software TBC de Trimble, para trabajos en tiempo real, utilizando la Red Geodésica existente.
+                        </li>
+    
+                        <li>
+                            Proyecto MINAGRI - ISETEK. Capacitación al Instituto Geográfico Nacional sobre los modelos matemáticos aplicados para analizar las Red Geodésica de las nuevas Estaciones de Rastreo Permanente instalados en la Selva Peruana.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+            
+    </div>
+    
+    <!-- -->
 
     <!-- Footer-->
     <div class="footer-container">
